@@ -19,10 +19,11 @@ The goal of this session is to work through a suggested workflow for creating ra
 
 # Optional Tools
 * [Console 2](http://sourceforge.net/projects/console/) - Tabbed and improved console for Windows.  [GIT Bash integration how-to](http://johngilliland.wordpress.com/2012/12/22/git-bash-console2-finally/)
-* Sublime Text
-* Emmet
+* [Sublime Text](http://www.sublimetext.com/) - A fantastic code editor
+* [Emmet](http://emmet.io/) - Crazy fast html shortcuts for Sublime (and other editors)
 
 # Setup ( Windows 8 )
+
 ## 1. Install GIT and GIT Bash
 You'll need a way to use command line [GIT](http://git-scm.com/) and [SSH](http://www.openssh.org/).  If you're using Linux/Mac for development you probably already have both and can run them from your operating system's native terminal.
 
@@ -55,7 +56,9 @@ Fire up GIT Bash and enter `npm install -g yo`.  Wait for the install to downloa
 Generators are instructions that help Yeoman set up new projects automatically.  Install the one for Jekyll by entering `npm install -g generator-jekyllrb`.
 
 # Let’s Build!
+
 > **Note**: All GIT techniques are roughly based on the article [‘How I Use GIT’ by Glenn Stovall](http://glennstovall.com/blog/2013/03/15/how-i-use-git/).  If you are unfamiliar with GIT, I recommend working through the 15min interactive tutorial at [Try Git](http://try.github.io/levels/1/challenges/1).
+
 ## Get Yeoman to set up a blank Jekyll project for us
 * Create a directory
 * GIT init

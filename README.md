@@ -103,6 +103,7 @@ Generators are instructions that help Yeoman set up new projects automatically. 
   * [Docs here](https://github.com/angular/bower-angular)
 * Add script to `<head>`
 * Add script url to `copy:dist` task in Gruntfile.js (like we did for the foundation files)
+
 ## 2. Start using Angular
 * This is another lesson for another day
 * If you’re curious, check out [Egghead.io](http://egghead.io/).  All of the beginner lessons are free, as are a lot of the advanced ones.  Watching 1 - 31 is how I got started. [Angular’s official tutorial](http://docs.angularjs.org/tutorial) is also quite good.

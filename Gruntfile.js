@@ -260,7 +260,8 @@ module.exports = function (grunt) {
             // Explicitly add any files your site needs for distribution here
             '_bower_components/foundation/js/vendor/custom.modernizr.js',
             '_bower_components/foundation/js/vendor/jquery.js',
-            '_bower_components/foundation/js/vendor/zepto.js'
+            '_bower_components/foundation/js/vendor/zepto.js',
+            '/_bower_components/angular/angular.min.js'
             //'favicon.ico',
             //'apple-touch*.png'
           ],

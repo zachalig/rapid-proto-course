@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Zach Alig -- Site Maker --  http://twitter.com/zachalig
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    Jekyll static site generator
+    Sass and Compass 
+    HTML5 ★ Boilerplate 
+

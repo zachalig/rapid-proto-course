@@ -55,39 +55,57 @@ Fire up GIT Bash and enter `npm install -g yo`.  Wait for the install to downloa
 ## 5. Install Generator-jekyllrb
 Generators are instructions that help Yeoman set up new projects automatically.  Install the one for Jekyll by entering `npm install -g generator-jekyllrb`.
 
-# Let’s Build!
+# Let’s Build! (CSS and HTML)
 
 > **Note**: All GIT techniques are roughly based on the article [‘How I Use GIT’ by Glenn Stovall](http://glennstovall.com/blog/2013/03/15/how-i-use-git/).  If you are unfamiliar with GIT, I recommend working through the 15min interactive tutorial at [Try Git](http://try.github.io/levels/1/challenges/1).
-
-## Get Yeoman to set up a blank Jekyll project for us
+## 1. Create a work space and local GIT repo
 * Create a directory
-* GIT init
-* Create dev branch
+* Move into new dir and GIT init `git init`
+* Create dev branch   `git checkout -b dev`
+
+## 2. Get Yeoman to set up a blank Jekyll project for us
 * `yo jekyllrb`
   * causes an error - Googled ‘Error: building is not supported on win32 npm install’ and found a [fix here].(https://github.com/gruntjs/grunt-contrib-imagemin/issues/109)
   * run `npm install` to finish the installation
 * Now run `grunt server` to see the site Yeoman built
-* Commit changes locally
+* Commit your changes by adding the new files to GIT tracking ( `git add .`) and committing them (`git commit -am ‘your message about the commit`)
+## 3. Commit files to remote GIT server for sharing and safekeeping
+* Connect to remote GIT repo `git remote add origin [Bitbucket or Github repository URL]`
+* Create a master branch on the remote server `git push origin master`
+* Create a dev branch on the remote server `git push origin dev`
 
-## Add Foundation using Bower
+## 4. Add Foundation using Bower
 * `bower install foundation --save`
 * Add `@import "../_bower_components/foundation/scss/foundation.scss";` to main.scss
 
-## Templating with Jekyll
+## 5. Templating with Jekyll
 * YAML
 * Folder structure (for pretty urls)
 * layouts
 * includes
 * logic
 
-## Add Foundation Javascripts
+## 6. Add Foundation Javascripts
 * Add any Foundation .js files you need to the usemin blocks
   * [Foundation Documentation on adding .js](http://foundation.zurb.com/docs/javascript.html)
 * Add any supporting .js to `copy:dist` grunt task
   * [Documentation Here](https://github.com/robwierzbowski/generator-jekyllrb#bower-components-and-usemin)
 * `grunt server` to see results
 
-## Build (for sharing or deployment)
+## 7. Build (for sharing or deployment)
+* Simply enter `grunt build`
+* Take a look at your files to make sure everything was minified and copied correctly.
+
+# Make it Dance! (Angular.js interactivity)
+
+## 1. Use Bower to Install Angular.js
+* `bower install angular --save`
+  * [Docs here](https://github.com/angular/bower-angular)
+* Add script to `<head>`
+* Add script url to `copy:dist` task in Gruntfile.js (like we did for the foundation files)
+## 2. Start using Angular
+* This is another lesson for another day
+* If you’re curious, check out [Egghead.io](http://egghead.io/).  All of the beginner lessons are free, as are a lot of the advanced ones.  Watching 1 - 31 is how I got started. [Angular’s official tutorial](http://docs.angularjs.org/tutorial) is also quite good.
 
 
 

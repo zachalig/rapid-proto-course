@@ -155,7 +155,7 @@ module.exports = function (grunt) {
     jekyll: {
       options: {
         bundleExec: true,
-        config: '_config.yml,_config.build.yml',
+        config: './_config.yml,./_config.build.yml',
         src: '<%= yeoman.app %>'
       },
       dist: {
@@ -165,7 +165,7 @@ module.exports = function (grunt) {
       },
       server: {
         options: {
-          config: '_config.yml',
+          config: './_config.yml',
           dest: '.jekyll'
         }
       },
@@ -258,7 +258,7 @@ module.exports = function (grunt) {
             // Like Jekyll, exclude files & folders prefixed with an underscore
             '!**/_*{,/**}'
             // Explicitly add any files your site needs for distribution here
-            //'_bower_components/jquery/jquery.js',
+            //'_bower_components/foundation/js/foundation/foundation.js',
             //'favicon.ico',
             //'apple-touch*.png'
           ],

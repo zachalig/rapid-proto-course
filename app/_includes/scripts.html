@@ -1,3 +1,17 @@
+<!-- Check for Zepto support, load jQuery if necessary -->
+<script>
+  document.write('<script src=/_bower_components/foundation/js/vendor/'
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+</script>
+
 <!-- build:js(app) /js/script.js -->
+<script src="/_bower_components/foundation/js/foundation/foundation.js"></script>
+<script src="/_bower_components/foundation/js/foundation/foundation.alerts.js"></script>
 <script src="/js/main.js"></script>
 <!-- endbuild -->
+
+<!-- Initialize Foundation -->
+<script>
+  $(document).foundation();
+</script>
